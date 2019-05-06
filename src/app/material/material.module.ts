@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [],
-  imports: []
+  imports: [],
+  exports: []
 })
 export class MaterialModule { }
