@@ -1,0 +1,22 @@
+
+<div>
+  <mat-spinner></mat-spinner>
+  <br>
+  <mat-progress-spinner value="70"></mat-progress-spinner>
+</div>
+
+<br>
+<div>
+  <mat-progress-bar value="33"></mat-progress-bar>
+  <br>
+  <mat-progress-bar value="100"></mat-progress-bar>
+</div>
+
+<br>
+<div>
+  <button mat-raised-button color="accent" (click)="loadData()">Load Data</button>
+  <br>
+  <mat-spinner color="warn" *ngIf="showSpinner"></mat-spinner>
+</div>
+
+
