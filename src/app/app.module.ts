@@ -12,6 +12,8 @@ import { IconsComponent } from './tutorials/icons/icons.component';
 import { BadgesComponent } from './tutorials/badges/badges.component';
 import { ProgressSpinnerComponent } from './tutorials/progress-spinner/progress-spinner.component';
 import { NavBarComponent } from './tutorials/navigation/nav-bar/nav-bar.component';
+import { SideNavComponent } from './tutorials/navigation/side-nav/side-nav.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import { NavBarComponent } from './tutorials/navigation/nav-bar/nav-bar.componen
     IconsComponent,
     BadgesComponent,
     ProgressSpinnerComponent,
-    NavBarComponent
+    NavBarComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MaterialModule
   ],
   providers: [],
