@@ -1,0 +1,29 @@
+<p>
+  Good alternatives to Radio Button and Checkboxes
+</p>
+<div>
+  <mat-button-toggle checked disableRipple disabled>Toggle button</mat-button-toggle>
+  <mat-button-toggle #toggleBtn checked>Toggle button</mat-button-toggle>
+  {{toggleBtn.checked}}
+</div>
+
+<div>
+  <p>RadioButton behaviour</p>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+</div>
+
+
+<div>
+    <p>Checkbox behaviour</p>
+    <mat-button-toggle-group #toggleGroup2="matButtonToggleGroup" multiple>
+      <mat-button-toggle value="angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="react">React</mat-button-toggle>
+      <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup2.value}}
+  </div>
