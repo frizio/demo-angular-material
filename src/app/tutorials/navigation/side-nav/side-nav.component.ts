@@ -14,4 +14,8 @@ export class SideNavComponent implements OnInit {
   ngOnInit() {
   }
 
+  log(state: string) {
+    console.log(`Listened event:  ${state}`);
+  }
+
 }
