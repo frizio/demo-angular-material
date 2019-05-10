@@ -1,0 +1,17 @@
+<p>
+  Menu display a list of choiches on a temporary surface. The choice appear when the user interact with a control.
+</p>
+
+<mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
+  <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
+  <button mat-menu-item>BackEnd</button>
+</mat-menu>
+
+<button mat-flat-button color="accent" class="arbitrary-shift" [matMenuTriggerFor]="appMenu">Trigger Menu</button>
+
+<mat-menu #subMenu="matMenu">
+  <button mat-menu-item>Angular</button>
+  <button mat-menu-item>React</button>
+  <button mat-menu-item>Vue</button>
+</mat-menu>
+
