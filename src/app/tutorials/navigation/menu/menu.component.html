@@ -15,3 +15,16 @@
   <button mat-menu-item>Vue</button>
 </mat-menu>
 
+<p>Lazy rendering and dynamic content</p>
+
+<mat-menu #lazyMenu="matMenu" yPosition="above">
+  <ng-template matMenuContent let-name="name" let-hobby="hobby">
+      <button mat-menu-item>{{hobby}}</button>
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Log out {{name}}</button>
+  </ng-template>
+</mat-menu>
+
+<button mat-flat-button color="accent" [matMenuTriggerFor]="lazyMenu" [matMenuTriggerData]="{name: 'Carl', hobby: 'Singing'}">Carl</button>
+<br><br>
+<button mat-flat-button color="accent" [matMenuTriggerFor]="lazyMenu" [matMenuTriggerData]="{name: 'Lenny', hobby: 'Dancing'}">Lenny</button>
