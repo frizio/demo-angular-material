@@ -15,6 +15,7 @@ import { NavBarComponent } from './tutorials/navigation/nav-bar/nav-bar.componen
 import { SideNavComponent } from './tutorials/navigation/side-nav/side-nav.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './tutorials/navigation/menu/menu.component';
+import { ListComponent } from './layout/list/list.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MenuComponent } from './tutorials/navigation/menu/menu.component';
     ProgressSpinnerComponent,
     NavBarComponent,
     SideNavComponent,
-    MenuComponent
+    MenuComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
