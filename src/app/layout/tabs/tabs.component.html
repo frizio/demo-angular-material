@@ -1,0 +1,16 @@
+<mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
+
+  <mat-tab label="Intro">Tabs allow to organize content into separate views, where only one view is visible in a given time.</mat-tab>
+  <mat-tab label="Angular">Angular content</mat-tab>
+  <mat-tab label="React">React cotnent</mat-tab>
+  <mat-tab label="Vue">
+
+    <app-cards></app-cards>
+
+  </mat-tab>
+
+</mat-tab-group>
+
+<div>
+  {{tabRef.selectedIndex}}
+</div>
