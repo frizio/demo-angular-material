@@ -23,6 +23,7 @@ import { TabsComponent } from './layout/tabs/tabs.component';
 import { StepperComponent } from './layout/stepper/stepper.component';
 import { InputComponent } from './forms/input/input.component';
 import { SelectComponent } from './forms/select/select.component';
+import { AutocompleteComponent } from './forms/autocomplete/autocomplete.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SelectComponent } from './forms/select/select.component';
     TabsComponent,
     StepperComponent,
     InputComponent,
-    SelectComponent
+    SelectComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,
