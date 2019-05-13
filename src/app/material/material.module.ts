@@ -7,7 +7,7 @@ import {
   MatToolbarModule, MatSidenavModule, MatMenuModule,
 
   MatListModule, MatDividerModule, MatGridListModule, MatExpansionModule,
-  MatCardModule, MatTabsModule, MatStepperModule, MatFormFieldModule, MatInputModule
+  MatCardModule, MatTabsModule, MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule
   } from '@angular/material';
 import { MatBadgeModule } from '@angular/material/badge';
 
@@ -33,7 +33,7 @@ const MaterialComponents = [
   MatStepperModule,
 
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule, MatSelectModule
 ];
 
 @NgModule({
