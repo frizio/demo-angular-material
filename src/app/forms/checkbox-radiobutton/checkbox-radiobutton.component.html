@@ -1,0 +1,16 @@
+<mat-checkbox>
+  Subscribe
+</mat-checkbox>
+<br>
+<mat-checkbox labelPosition="before" color="primary">
+  Subscribe
+</mat-checkbox>
+<br>
+
+<mat-radio-group [(ngModel)]="favoriteValue">
+  <mat-radio-button value="angular" color="primary">Angular</mat-radio-button>
+  <mat-radio-button value="react">React</mat-radio-button>
+  <mat-radio-button value="vue" color="warn">Vue</mat-radio-button>
+</mat-radio-group>
+<br>
+{{favoriteValue}}

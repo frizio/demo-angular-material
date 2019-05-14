@@ -9,7 +9,7 @@ import {
   MatListModule, MatDividerModule, MatGridListModule, MatExpansionModule,
   MatCardModule, MatTabsModule, MatStepperModule,
 
-  MatFormFieldModule, MatInputModule, MatSelectModule, MatAutocompleteModule
+  MatFormFieldModule, MatInputModule, MatSelectModule, MatAutocompleteModule, MatCheckboxModule, MatRadioModule
   } from '@angular/material';
 import { MatBadgeModule } from '@angular/material/badge';
 
@@ -37,7 +37,9 @@ const MaterialComponents = [
   MatFormFieldModule,
   MatInputModule,
   MatSelectModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  MatCheckboxModule,
+  MatRadioModule
 ];
 
 @NgModule({
