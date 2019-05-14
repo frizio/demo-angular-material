@@ -12,7 +12,8 @@ import {
   MatFormFieldModule, MatInputModule, MatSelectModule, MatAutocompleteModule, MatCheckboxModule, MatRadioModule,
   MatDatepickerModule, MatNativeDateModule, MatTooltipModule, MatSnackBarModule, MatDialogModule,
 
-  MatTableModule
+  MatTableModule,
+  MatSortModule
   } from '@angular/material';
 import { MatBadgeModule } from '@angular/material/badge';
 
@@ -48,7 +49,9 @@ const MaterialComponents = [
   MatTooltipModule,
   MatSnackBarModule,
   MatDialogModule,
-  MatTableModule
+
+  MatTableModule,
+  MatSortModule
 ];
 
 @NgModule({
