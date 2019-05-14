@@ -19,7 +19,12 @@ export class DialogComponent implements OnInit {
   openDialog(message: string, action: string) {
     console.log('Open dialog');
     // Component + Configuration (optional)
-    this.dialogService.open(DialogExampleComponent);
+    const dialogRef = this.dialogService.open(DialogExampleComponent);
+    dialogRef.afterClosed().subscribe(
+      result => {
+        console.log(`Close Dialog, result: ${result}`);
+      }
+    );
   }
 
 }
