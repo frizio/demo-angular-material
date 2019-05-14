@@ -35,6 +35,7 @@ import { DatepickerComponent } from './forms/datepicker/datepicker.component';
 import { TooltipComponent } from './forms/tooltip/tooltip.component';
 import { SnackbarComponent } from './forms/snackbar/snackbar.component';
 import { DialogComponent } from './forms/dialog/dialog.component';
+import { DialogExampleComponent } from './forms/dialog/dialog-example/dialog-example.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,9 @@ import { DialogComponent } from './forms/dialog/dialog.component';
     TooltipComponent,
     SnackbarComponent,
     DialogComponent,
+    DialogExampleComponent
   ],
+  entryComponents: [DialogExampleComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
