@@ -16,10 +16,10 @@ export class DialogComponent implements OnInit {
   ngOnInit() {
   }
 
-  openDialog(message: string, action: string) {
+  openDialog() {
     console.log('Open dialog');
     // Component + Configuration (optional)
-    const dialogRef = this.dialogService.open(DialogExampleComponent);
+    const dialogRef = this.dialogService.open(DialogExampleComponent, {data : {name: 'Frizio'}});
     dialogRef.afterClosed().subscribe(
       result => {
         console.log(`Close Dialog, result: ${result}`);
