@@ -34,6 +34,7 @@ import { CheckboxRadiobuttonComponent } from './forms/checkbox-radiobutton/check
 import { DatepickerComponent } from './forms/datepicker/datepicker.component';
 import { TooltipComponent } from './forms/tooltip/tooltip.component';
 import { SnackbarComponent } from './forms/snackbar/snackbar.component';
+import { DialogComponent } from './forms/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { SnackbarComponent } from './forms/snackbar/snackbar.component';
     CheckboxRadiobuttonComponent,
     DatepickerComponent,
     TooltipComponent,
-    SnackbarComponent
+    SnackbarComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
