@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
 
 @Component({
   selector: 'app-autocomplete',
@@ -16,13 +19,32 @@ export class AutocompleteComponent implements OnInit {
     {name: 'Vue'},
   ];
 
+  myControl = new FormControl();
+
+  filteredOption: Observable<string[]>;
+
   constructor() { }
 
   ngOnInit() {
+
+    this.filteredOption =
+      this.myControl.valueChanges.pipe(
+        startWith(''),
+        map( value => this._filter(value) )
+
+    );
+
   }
 
   displayFunction(subject) {
    return subject ? subject.name : undefined;
+  }
+
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+    return this.options.filter(
+      option => option.toLowerCase().includes(filterValue)
+    );
   }
 
 }
