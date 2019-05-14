@@ -39,11 +39,17 @@ export class DataTableComponent implements OnInit {
 
   // Define the data source and the columns to be displayed
   dataSource = ELEMENT_DATA;
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['positionn', 'name', 'symbol', 'weight'];
+  displayedColumnsData: string[] = ['positionn', 'name', 'symbol'];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  logData(row: any) {
+    console.log(`Row Data: ${row}`);
+    console.log(row);
   }
 
 
