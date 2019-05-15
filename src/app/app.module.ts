@@ -38,6 +38,9 @@ import { DialogComponent } from './forms/dialog/dialog.component';
 import { DialogExampleComponent } from './forms/dialog/dialog-example/dialog-example.component';
 
 import { DataTableComponent } from './data-table/data-table/data-table.component';
+import { VirtualScrollingComponent } from './layout/virtual-scrolling/virtual-scrolling.component';
+
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -73,7 +76,9 @@ import { DataTableComponent } from './data-table/data-table/data-table.component
     DialogComponent,
     DialogExampleComponent,
 
-    DataTableComponent
+    DataTableComponent,
+
+    VirtualScrollingComponent
   ],
   entryComponents: [DialogExampleComponent],
   imports: [
@@ -82,7 +87,8 @@ import { DataTableComponent } from './data-table/data-table/data-table.component
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
