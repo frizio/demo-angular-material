@@ -4,4 +4,9 @@
   align-items: center;
   border: 2px solid blue;
   box-shadow: border-box;
+  height: 100px;
+}
+
+.container {
+  height: 418px;
 }
